@@ -1,0 +1,27 @@
+{
+  "name": "mi-portafolio",
+  "version": "0.1.0",
+  "description": "Mi portafolio profesional",
+  "homepage": "https://github.com/DanielVargasDev/mi-portafolio#readme",
+  "bugs": {
+    "url": "https://github.com/DanielVargasDev/mi-portafolio/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielVargasDev/mi-portafolio.git"
+  },
+  "license": "ISC",
+  "author": "Daniel Vargas",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run build && esbuild src/main.js --bundle --format=esm --outfile=dist/assets/main.js --servedir=dist",
+    "build": "esbuild src/main.js --bundle --format=esm --minify --outfile=dist/assets/main.js && tailwindcss -i src/index.css -o dist/assets/main.css --minify && node -e \"require('node:fs').copyFileSync('index.html','dist/index.html')\"",
+    "preview": "npm run build && esbuild src/main.js --bundle --format=esm --outfile=dist/assets/main.js --servedir=dist"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.5",
+    "esbuild": "^0.28.2",
+    "tailwindcss": "^4.3.5"
+  }
+}
