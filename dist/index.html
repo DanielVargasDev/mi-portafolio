@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#07090a" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Manrope:wght@400;500;600;700&family=Unbounded:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/main.css" />
+    <title>Kevin Daniel — Desarrollador Web</title>
+</head>
+<body>
+    <canvas class="lienzo" aria-hidden="true"></canvas>
+<header class="cabecera">
+    <div class="contenedor barra">
+        <a href="#inicio" class="logo" aria-label="Inicio">
+            <span>KD</span>
+            <i></i>
+        </a>
+        <nav class="menu" aria-label="Principal">
+            <a href="#sobre">Sobre mí</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <a href="#contacto" class="botonMini">Contratar</a>
+        <button
+            id="menu-toggle"
+            class="hamburguesa"
+            type="button"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+            aria-controls="menu-movil"
+        >
+            <span></span>
+            <span></span>
+        </button>
+        </div>
+        <nav id="menu-movil" class="menuMovil" aria-label="Menú móvil" aria-hidden="true">
+            <a href="#sobre" tabindex="-1"><small>01</small>Sobre mí</a>
+            <a href="#habilidades" tabindex="-1"><small>02</small>Habilidades</a>
+            <a href="#proyectos" tabindex="-1"><small>03</small>Proyectos</a>
+            <a href="#servicios" tabindex="-1"><small>04</small>Servicios</a>
+            <a href="#contacto" tabindex="-1"><small>05</small>Contacto</a>
+        </nav>
+    </header>
+
+    <main class="principal">
+        <section id="inicio" class="inicio">
+            <div class="contenedor cuerpoInicio">
+                <p class="estado rev">
+                    <b></b>
+                    Disponible · respondo rápido
+                </p>
+                <h1 class="rev" style="--d: 80ms">
+                    Kevin Daniel
+                    <span>Gonzalez Vargas</span>
+                </h1>
+                <p class="rol rev" style="--d: 160ms">
+                    Desarrollador web. Construyo interfaces rápidas y sistemas sólidos, con trato serio y
+                    precios justos.
+                </p>
+                <div class="acciones rev" style="--d: 240ms">
+                    <a href="#contacto" class="boton primario">
+                        Escríbeme
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M5 12h14M13 6l6 6-6 6" />
+                        </svg>
+                    </a>
+                    <a href="#habilidades" class="boton">Ver habilidades</a>
+                </div>
+                <dl class="datos rev" style="--d: 320ms">
+                    <div>
+                        <dt>Respuesta</dt>
+                        <dd>Rápida</dd>
+                    </div>
+                    <div>
+                        <dt>Horario</dt>
+                        <dd>Flexible</dd>
+                    </div>
+                    <div>
+                        <dt>Trato</dt>
+                        <dd>Profesional</dd>
+                    </div>
+                    <div>
+                        <dt>Tarifa</dt>
+                        <dd>Accesible</dd>
+                    </div>
+                </dl>
+            </div>
+            <a href="#sobre" class="bajar" aria-label="Bajar"><span></span></a>
+        </section>
+
+        <section id="sobre" class="seccion">
+            <div class="contenedor dosCol">
+                <div>
+                    <p class="etiqueta rev">01 — Sobre mí</p>
+                    <h2 class="rev">Código ordenado, comunicación clara.</h2>
+                    <div class="texto rev" style="--d: 100ms">
+                    <p>
+                        Soy Kevin, desarrollador web. Trabajo con tecnologías de front y back para convertir
+                        una idea en algo que funciona, se ve bien y se mantiene fácil.
+                    </p>
+                    <p>
+                        Me tomo en serio los plazos y la comunicación: respondo rápido, soy muy educado y me
+                        adapto a cualquier horario. Además, mis tarifas son accesibles para que empezar un
+                        proyecto no sea una barrera.
+                    </p>
+                    </div>
+                </div>
+                <div class="rev" style="--d: 150ms">
+                    <div class="panel inclinar ficha">
+                        <div class="cabFicha">
+                            <span>perfil.info</span>
+                            <i></i>
+                        </div>
+                        <dl>
+                            <div><dt>nombre</dt><dd>Kevin Daniel Gonzalez Vargas</dd></div>
+                            <div><dt>rol</dt><dd>Desarrollador web</dd></div>
+                            <div><dt>respuesta</dt><dd>Rápida</dd></div>
+                            <div><dt>horario</dt><dd>Se adapta al tuyo</dd></div>
+                            <div><dt>tarifa</dt><dd>Accesible</dd></div>
+                            <div><dt>correo</dt><dd>seoul.gv@gmail.com</dd></div>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades" class="seccion">
+            <div class="contenedor">
+                <p class="etiqueta rev">02 — Habilidades</p>
+                <h2 class="rev">Las herramientas con las que trabajo.</h2>
+                <div class="escenario rev" aria-label="Tecnologías">
+                    <div class="anillo" style="--n: 10">
+                    <div class="ficha3d" style="--i: 0"><small>01</small><b>HTML5</b></div>
+                    <div class="ficha3d" style="--i: 1"><small>02</small><b>CSS3</b></div>
+                    <div class="ficha3d" style="--i: 2"><small>03</small><b>Bootstrap</b></div>
+                    <div class="ficha3d" style="--i: 3"><small>04</small><b>JavaScript</b></div>
+                    <div class="ficha3d" style="--i: 4"><small>05</small><b>Java</b></div>
+                    <div class="ficha3d" style="--i: 5"><small>06</small><b>PHP</b></div>
+                    <div class="ficha3d" style="--i: 6"><small>07</small><b>SQL / MySQL</b></div>
+                    <div class="ficha3d" style="--i: 7"><small>08</small><b>React</b></div>
+                    <div class="ficha3d" style="--i: 8"><small>09</small><b>Node</b></div>
+                    <div class="ficha3d" style="--i: 9"><small>10</small><b>Tailwind CSS</b></div>
+                </div>
+            </div>
+            <div class="rejillaGrupos">
+                <div class="rev" style="--d: 0ms">
+                    <div class="panel inclinar grupo">
+                        <h3>Interfaz</h3>
+                        <p>Lo que el usuario ve y toca.</p>
+                        <ul><li>HTML5</li><li>CSS3</li><li>Bootstrap</li><li>React</li></ul>
+                    </div>
+                </div>
+                <div class="rev" style="--d: 90ms">
+                    <div class="panel inclinar grupo">
+                        <h3>Lógica</h3>
+                        <p>Reglas, procesos y servidores.</p>
+                        <ul><li>JavaScript</li><li>Java</li><li>PHP</li><li>Node</li></ul>
+                    </div>
+                </div>
+                <div class="rev" style="--d: 180ms">
+                    <div class="panel inclinar grupo">
+                        <h3>Datos y entorno</h3>
+                        <p>Datos fiables y estilos consistentes.</p>
+                        <ul><li>SQL / MySQL</li><li>Tailwind CSS</li></ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos" class="seccion">
+            <div class="contenedor">
+            <p class="etiqueta rev">03 — Proyectos</p>
+            <h2 class="rev">En construcción.</h2>
+            <p class="intro rev">
+                Aún no hay proyectos publicados. Estoy preparando los primeros y los verás aquí. Si
+                tienes uno en mente, podemos empezarlo juntos.
+            </p>
+            <div class="rejillaProy">
+                <div class="rev" style="--d: 0ms">
+                <div class="panel inclinar hueco">
+                    <div class="cubo" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                    <span class="numHueco">Proyectos en desarrollo</span>
+                    <span class="estadoHueco">Espacio reservado</span>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section id="servicios" class="seccion">
+            <div class="contenedor">
+            <p class="etiqueta rev">04 — Servicios</p>
+            <h2 class="rev">Qué puedo hacer por ti.</h2>
+            <div class="rejillaServ">
+                <div class="rev" style="--d: 0ms">
+                <div class="panel inclinar servicio"><span class="num">01</span><h3>Sitios web</h3><p>Páginas claras, responsivas y rápidas, listas para verse bien en cualquier pantalla.</p></div>
+                </div>
+                <div class="rev" style="--d: 80ms">
+                <div class="panel inclinar servicio"><span class="num">02</span><h3>Apps con React</h3><p>Interfaces dinámicas con React, pensadas para crecer sin complicarse.</p></div>
+                </div>
+                <div class="rev" style="--d: 160ms">
+                <div class="panel inclinar servicio"><span class="num">03</span><h3>Backend y datos</h3><p>Lógica de servidor con Node, PHP o Java, conectada a bases de datos MySQL.</p></div>
+                </div>
+                <div class="rev" style="--d: 240ms">
+                <div class="panel inclinar servicio"><span class="num">04</span><h3>Ajustes y mejoras</h3><p>Corrección de errores, cambios puntuales y optimización de proyectos existentes.</p></div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="seccion">
+            <div class="contenedor dosCol">
+            <div>
+                <p class="etiqueta rev">05 — Contacto</p>
+                <h2 class="rev">Hablemos de tu proyecto.</h2>
+                <p class="intro rev">
+                Escríbeme con lo que necesitas y te respondo en poco tiempo, a la hora que sea.
+                </p>
+                <div class="correoCaja rev">
+                <a href="mailto:seoul.gv@gmail.com" class="correo">seoul.gv@gmail.com</a>
+                <button id="copiar-correo" type="button" class="copiar">Copiar</button>
+                </div>
+            </div>
+            <form id="formulario-contacto" class="formulario panel rev" style="--d: 120ms">
+                <label>
+                <span>Nombre</span>
+                <input id="nombre" name="nombre" type="text" required autocomplete="name" placeholder="Tu nombre" />
+                </label>
+                <label>
+                <span>Mensaje</span>
+                <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Cuéntame qué necesitas"></textarea>
+                </label>
+                <button type="submit" class="boton primario">
+                Enviar por correo
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+                </button>
+                <small>Se abrirá tu aplicación de correo con el mensaje listo.</small>
+            </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <div class="contenedor filaPie">
+            <span>© <span id="anio"></span> Kevin Daniel Gonzalez Vargas</span>
+            <a href="#inicio">Volver arriba ↑</a>
+        </div>
+    </footer>
+    <div class="hud" aria-hidden="true"><span>forma</span><b id="forma-actual">01 · esfera</b></div>
+    <script type="module" src="./assets/main.js"></script>
+</body>
+</html>
